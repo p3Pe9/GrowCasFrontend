@@ -10,22 +10,31 @@ body {
 
 .asd{
     display: flex;
+
+    .slotts{
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 40px;
+    height: 200px;
+
 }
 
-.hirdetesekK{
-    background-color: rgb(255, 255, 255, 0.4);
-    opacity: 80%;
-    margin-top: 30px;
-    width: 1000vh;
-    height: 73.3vh;
-    border: solid white 0.3vh;
-    border-radius: 25px;
-    margin-left: 80px;
-    margin-right: 40px;
-    justify-content: right;
-    animation-duration: 1s;
+.slott{
+    animation-duration: 1.5s;
     animation-name: elojovetel;
+    background-color: rgb(255, 255, 255, 0.4);
+    height: 200px;
+    width: 300px;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center; /* vízszint */
+    align-items: center;    
 }
+
+}
+
+
 
 @keyframes elojovetel{
     0%{
@@ -40,13 +49,15 @@ body {
     }
 }
 
-.slots{
+.slotts{
     display: flex;
     justify-content: space-between;
     margin: 35px 40px;
+    height: 200px;
+
 }
 
-.slot{
+.slott{
     animation-duration: 1.5s;
     animation-name: elojovetel;
     background-color: rgb(255, 255, 255, 0.4);
@@ -57,10 +68,13 @@ body {
     display: flex;
     justify-content: center; /* vízszint */
     align-items: center;    
-    margin-bottom: 20px;
 }
 
-.slot img{
+.alink{
+    height: 200px;
+}
+
+.slott img{
     display: block;
     height: 180px;
     justify-content: center;
@@ -71,48 +85,44 @@ body {
    ========================= */
 @media (max-width: 420px) {
 
-    /* felső layout */
-    .asd {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    /* hirdetés KIKAPCS kisebb nézeten */
-    .hirdetesekK {
-        display: none;
-    }
-
-    /* slot sorok */
-    .slots {
+    /* slott sorok */
+    .slotts {
         flex-wrap: wrap;
         justify-content: center;
         margin: 15px 10px;
         gap: 12px;
     }
 
-    /* slot kártyák */
-    .slot {
-        width: 90%;
+    /* slott kártyák */
+    .slott {
+        width: 100%;
         height: 160px;
     }
 
-    .slot img {
-        height: 130px;
+    .slott img {
+        height: 1300px;
     }
 }
 
 @media (max-width: 420px) {
+    body{
+        height: 1950px;
+    }
 
-    .slots {
+    .ki{
+        display: none;
+    }
+
+    .slotts {
         display: flex;
         flex-direction: column;
         gap: 16px;
         margin: 12px;
     }
 
-    .slot {
-        margin-left: 22px;
-        width: 10   0%;
+    .slott {
+        width: 100%;
         height: 160px;
         border-radius: 22px;
         background: linear-gradient(135deg, #5aa9ff, #7fd7ff);
@@ -121,41 +131,10 @@ body {
         align-items: center;
     }
 
-    .slot img {
+    .slott img {
         height: 80%;
         object-fit: contain;
     }
-}
 
 
-
-@media (max-width: 420px) {
-
-    .hirdetesekK {
-        width: calc(100% - 24px); /* teljes szélesség mobilon */
-        height: auto;             /* arány megtartása */
-        margin: 12px auto;        /* középre */
-        display: block;
-
-        border-radius: 16px;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    
-    .mobilKi{
-        display: none;
-    }
-
-
-
-}
-
-.gepKi {
-    display: block;   /* alapból látszik (mobil) */
-}
-
-@media (min-width: 421px) {
-    .gepKi {
-        display: none;   /* PC-n eltűnik */
-    }
 }

@@ -20,11 +20,11 @@ export default function Navbar() {
                 <div className='NavCucc'>
 
                     <div id='imgDiv'>
-                        <img src={Logo} alt="" id='navcuccimg' />
+                        <Link to="/"><img src={Logo} alt="" id='navcuccimg' /></Link>
                     </div>
-                    <hr />
-                    <Link className='link' to='/profile'> <img src={User} alt="" /> Profile</Link><br />
-                    <hr />
+            
+                    
+                    <hr id='felsoEltartas'/>
                     <Link className='link' to='/played'><img src={History} alt="" /> Played</Link><br />
                     <hr />
                     <Link className='link' to='/favorite'><img src={Favorite} alt="" /> Favorite</Link><br />
@@ -36,7 +36,7 @@ export default function Navbar() {
                     <hr />
                     <Link className='link' to='/cards'> <img src={PokerC} alt="" /> Cards</Link><br />
                     <hr />
-                    <Link className='link' to='/roulette'> <img src={Roulette} alt="" /> Roulette</Link><br />
+                    <Link className='link' to='/roulettes'> <img src={Roulette} alt="" /> Roulette</Link><br />
                     <hr />
                     <Link className='link' to='/liveCasino'> <img src={Live} alt="" /> Live casino</Link>
                     <hr />

@@ -50,3 +50,45 @@
   height: 100vh;
   overflow: hidden;
 }
+
+@media (max-width: 420px) {
+
+    #body {
+        height: auto;
+        overflow: auto;
+        padding: 16px;
+    }
+
+    /* FŐ RENDEZÉS */
+    #rendezes {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4vh;
+        text-align: center;
+    }
+
+    /* LOGÓ */
+    #logo {
+        height: 22vh;
+        margin-bottom: 16px;
+    }
+
+    /* FELIRAT */
+    #nemElerhetoFelirat {
+        font-size: 4vh;
+        line-height: 5vh;
+        margin-left: 0;
+    }
+
+    /* GOMB RENDEZÉS */
+    #gombRendezes {
+        margin-top: 24px;
+    }
+
+    #visszaGomb {
+        min-width: 100%;
+        height: 52px;
+        font-size: 16px;
+        border-radius: 20px;
+    }
+}

@@ -25,6 +25,8 @@
     width: 20vh;
     font-style: italic;
     transition: 1s;
+    border: solid 1px white ;
+
 }
 
 .kereso{
@@ -37,6 +39,8 @@
     background-color: rgba(255, 255, 255, 0.247);
     color: white;
     padding-left: 10px;
+    border: solid 1px white ;
+
 }
 
 .felsoGI{
@@ -56,4 +60,96 @@
 
 .felsoGIK{
     margin-left: 250px;
+}
+
+
+@media (max-width: 420px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .felsoSor {
+        width: 100%;
+        padding: 12px 14px;
+        box-sizing: border-box;
+    }
+
+    .growFelirat {
+        font-size: 42px;
+        margin-left: 8px;
+        white-space: nowrap;
+    }
+
+    .kereso {
+        display: none;
+    }
+
+    .felsoGombok {
+        height: 42px;
+        font-size: 15px;
+        width: auto;
+        padding: 0 16px;
+    }
+
+    .felsoGI {
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .felsoSor {
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .growFelirat {
+        font-size: 42px;
+        margin-left: 0;
+        max-width: 60%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .felsoSor > :last-child {
+        max-width: 40%;
+        display: flex;
+        justify-content: flex-end;
+        overflow: hidden;
+    }
+
+    .felsoSor img,
+    .felsoSor button {
+        max-width: 100%;
+    }
+
+    .kereso {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .felsoSor {
+        overflow: visible;   
+    }
+}
+
+@media (max-width: 420px) {
+
+    .dropdown {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        z-index: 9999;
+    }
 }

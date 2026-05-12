@@ -23,6 +23,10 @@ body{
 
 }
 
+#felsoEltartas{
+    margin-top: 20px;
+}
+
 @keyframes elojovetel{
     0%{
         opacity: 0%; 
@@ -101,4 +105,32 @@ hr{
         scale: 2;
         opacity: 100%;
     }
+}
+
+
+@media (max-width: 420px) {
+
+    .NavCucc{
+
+    border-radius: 0px;
+    height: 63vh;
+    width: 300vh;
+    border: solid 1px white ;
+    background-color: rgba(255, 255, 255, 0.185);
+    font-size: 3vh;
+    font-weight: bolder;
+    margin: 0;
+
+    animation-duration: 1s;
+    animation-name: elojovetel;
+
+
+    }
+
+    #imgDiv img{
+    margin-top: 30px;
+    height: 20vh;
+    }
+
+
 }
