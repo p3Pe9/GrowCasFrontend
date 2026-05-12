@@ -9,24 +9,16 @@
   force = true
 
 [[redirects]]
-  from = "/api/profile-images*"
-  to = "https://nodejs212.dszcbaross.edu.hu:21111/api/profile-images/:splat"
+  from = "/api*"
+  to = "https://nodejs212.dszcbaross.edu.hu/api/:splat"
   status = 200
   force = true
 
 [[redirects]]
-  from = "/mines"
-  to = "https://nodejs212.dszcbaross.edu.hu:21111/mines"
+  from = "/mines*"
+  to = "https://nodejs212.dszcbaross.edu.hu/mines/:splat"
   status = 200
   force = true
-
-
-[[redirects]]
-  from = "/user/*"
-  to = "https://nodejs212.dszcbaross.edu.hu/user/:splat"
-  status = 200
-  force = true
-
 
 [[redirects]]
   from = "/*"

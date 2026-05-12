@@ -9,6 +9,14 @@ export default defineConfig({
       '/users': {
         target: 'https://nodejs212.dszcbaross.edu.hu',
         changeOrigin: true
+      },
+      '/mines': {
+        target: 'https://nodejs212.dszcbaross.edu.hu',
+        changeOrigin: true
+      },
+      '/api': {
+        target: 'https://nodejs212.dszcbaross.edu.hu',
+        changeOrigin: true
       }
     }
   }
