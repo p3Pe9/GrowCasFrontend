@@ -11,7 +11,7 @@ import Card from '../elemek/Card'
 
 import Hirdet from '../assets/kepek/hirdetes.png'
 import SlotKep from '../assets/kepek/sugar.png'
-import CoinflipKep from '../assets/kepek/CoinFlip.png'
+import CoinflipKep from '../assets/kepek/Coinflip.png'
 import MinesKep from '../assets/kepek/Mines.png'
 import RouletteKep from '../assets/kepek/RouletteKep.png'
 
